@@ -1,5 +1,5 @@
 import {
-  Switch,
+  HashRouter,
   Route,
   Redirect,
   withRouter,
@@ -32,7 +32,7 @@ function List() {
   }, []);
   return (
     <div>
-      <Switch>
+      <HashRouter>
         <Route path="/product/:listId" exact>
           <CategoryWithId />
         </Route>
@@ -40,7 +40,7 @@ function List() {
           <CategoryList state={state} />
         </Route>
         <Redirect to="/" />
-      </Switch>
+      </HashRouter>
     </div>
   );
 }
