@@ -99,7 +99,7 @@ function ProductList(props) {
           <Grid container>
             {productList.length > 0 ? (
               productList.map((list, index) => (
-                <Grid item xs={12} sm={4}>
+                <Grid item sm={4}>
                   <Display key={index} list={list} />
                 </Grid>
               ))

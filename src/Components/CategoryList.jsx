@@ -60,7 +60,7 @@ function CategoryList(props) {
           <Grid item xs={12}>
             <Grid container>
               {state.map((list, index) => (
-                <Grid item xs={12} sm={3}>
+                <Grid item sm={3}>
                   <ShowCategory list={list}></ShowCategory>
                 </Grid>
               ))}
